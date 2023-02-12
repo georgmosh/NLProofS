@@ -13,6 +13,7 @@ from transformers import (
     T5ForConditionalGeneration,
     BartForConditionalGeneration,
     LogitsProcessor,
+    AutoModelForSeq2SeqLM,
 )
 from prover.evaluate import evaluate_entailmentbank, evaluate_ruletaker
 
@@ -145,6 +146,8 @@ class EntailmentWriter(pl.LightningModule):
             self.seq2seq = T5ForConditionalGeneration.from_pretrained(model_name)
         elif model_name.startswith("facebook/bart-"):
             self.seq2seq = BartForConditionalGeneration.from_pretrained(model_name)
+        elif model_name.startswith("google/flan-t5-"):
+            self.seq2seq = AutoModelForSeq2SeqLM.from_pretrained(model_name)
         else:
             raise NotImplementedError
 
