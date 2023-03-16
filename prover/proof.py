@@ -74,12 +74,14 @@ class Proof:
         proof_text: str,
         strict: bool,
         requires_complete: bool = False,
+        id: str = "",
     ) -> None:
         if isinstance(context, str):
             context = extract_context(context)
         self.hypothesis = hypothesis
         self.strict = strict
         self.requires_complete = requires_complete
+        self.id = id
 
         proof_text = proof_text.strip()
         if proof_text.endswith(";"):

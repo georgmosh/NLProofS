@@ -31,6 +31,7 @@ def read_entailmentbank_proofs(path: str, is_train: bool) -> List[Example]:
                 proof_text,
                 strict=is_train,
                 requires_complete=is_train,
+                id=ex["id"],
             )
             data.append({"proof": proof})
         except InvalidProofStep:
