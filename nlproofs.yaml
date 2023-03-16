@@ -7,7 +7,7 @@ channels:
   - defaults
 dependencies:
   - python=3.9
-  - cudatoolkit=11.3
+  - cudatoolkit=11.4
   - pytorch=1.11.0
   - black
   - torchmetrics
