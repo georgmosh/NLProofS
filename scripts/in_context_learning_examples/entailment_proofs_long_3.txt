@@ -1,0 +1,70 @@
+Hypothesis: producers get energy by using the sun to make food
+Context:
+sent1: if a thing uses something that comes from a source then that thing uses the source of that something 
+sent2: a plant requires sunlight for photosynthesis 
+sent3: photosynthesis is a kind of chemical process 
+sent4: green plants are a kind of producer 
+sent5: a plant is a kind of living thing 
+sent6: one can get something from a source 
+sent7: green plants provide food for themselves / animals / consumers by performing photosynthesis 
+sent8: making something is a kind of method for providing something 
+sent9: if a living thing requires something for a process then that living thing uses that something for that process 
+sent10: food is a source of energy for plants 
+sent11: the sun is the source of solar energy called sunlight 
+sent12: green plant is a kind of plant 
+Proof: sent10 & sent4 -> int1: food is a source of energy for producers; int1 & sent6 -> int2: producers can get energy from food; sent7 & sent8 -> int3: green plants make food by performing photosynthesis; sent3 & sent9 -> int4: if a living thing requires something for photosynthesis then that living thing uses that something for photosynthesis; int4 & sent2 & sent5 -> int5: a plant uses sunlight for photosynthesis; int5 & sent12 -> int6: green plant uses sunlight for photosynthesis; int3 & int6 -> int7: a green plant uses sunlight to make food; sent1 & sent11 -> int8: if a thing uses sunlight then that thing uses the sun; int7 & int8 -> int9: a green plant uses the sun to make food; int9 & sent4 -> int10: a producer uses the sun to make food; int10 & int2 -> hypothesis;
+
+Hypothesis: the water will boil if heat energy absorbed from the pot is increased past the boiling point
+Context:
+sent1: if a thermal conductor is exposed to a source of heat then that conductor may become hot 
+sent2: the pot is exposed to a stove 
+sent3: metal is a thermal energy conductor 
+sent4: a pot is made of metal for cooking 
+sent5: a pot is a kind of object 
+sent6: heating means adding heat 
+sent7: a pot contains water 
+sent8: a stove is a source of heat 
+sent9: boiling happens when liquids are heated above their boiling point 
+sent10: a pot is a kind of container 
+sent11: water is a kind of liquid at room temperature 
+sent12: if a container contains something then that container touches that something 
+sent13: if an object is hot and it touches something, that something will increase temperature by absorbing heat energy from the object 
+Proof: sent10 & sent12 -> int1: if a pot contains something then that pot touches that something; int1 & sent7 -> int2: the pot is touching the water; sent3 & sent4 -> int3: a pot is a thermal energy conductor; sent1 & sent8 -> int4: if a thermal conductor is exposed to a stove then that conductor may become hot; int3 & int4 -> int5: if a pot is exposed to a stove then that pot may become hot; int5 & sent2 -> int6: the pot may become hot; int2 & int6 -> int7: the hot pot is touching the water; int7 & sent13 & sent5 -> int8: the water will increase temperature by absorbing heat energy from the pot; sent6 & sent9 -> int9: boiling happens when liquids increase heat energy above their boiling point; int9 & sent11 -> int10: boiling happens when water increases heat energy above its boiling point; int10 & int8 -> hypothesis;
+
+Hypothesis: the water from the melted ice cube will then evaporate
+Context:
+sent1: a pan is put on an open flame 
+sent2: a flame is a part of a fire 
+sent3: evaporation means a substance changes from a liquid into a gas by increasing heat energy 
+sent4: if a substance is exposed to a source of heat then that substance may become hot / warm 
+sent5: becoming hot means increasing in heat energy 
+sent6: an ice cube is placed in the pan 
+sent7: if thermal conductor is exposed to a source of heat then that conductor may become hot / warm 
+sent8: a hot object is a source of heat 
+sent9: metal is a thermal conductor 
+sent10: fire gives off heat 
+sent11: a source of something gives off that something 
+sent12: melting means a substance changes from a solid into a liquid by increasing heat energy 
+sent13: if something is placed over a heat source then that something is exposed to that heat source 
+sent14: a pan is made of metal for cooking 
+sent15: if an object is exposed to a source of heat then that object may become hot 
+sent16: an ice cube is a kind of object 
+sent17: a pan is a kind of object 
+Proof: sent14 & sent9 -> int1: a pan is a thermal conductor; sent10 & sent2 -> int2: the flame gives off heat; int2 & sent11 -> int3: the flame is a source of heat; int3 & sent1 & sent13 -> int4: the pan is exposed to a source of heat; int1 & int4 & sent7 -> int5: the pan will become hot; int5 & sent17 -> int6: the hot pan is a kind of hot object; int6 & sent8 -> int7: the hot pan is a source of heat; int7 & sent13 & sent6 -> int8: the ice cube in the hot pan is exposed to a source of heat; int8 & sent15 & sent16 -> int9: the ice cube in the hot pan will become hot; int9 & sent12 & sent5 -> int10: the ice cube will melt and change into water in hot the pan; int10 & int7 -> int11: the water from the melted ice cube in the pan is exposed to a source of heat; int11 & sent4 -> int12: the water from the melted ice cube will become hot; int12 & sent3 & sent5 -> hypothesis;
+
+Hypothesis: the wood will increase temperature slower
+Context:
+sent1: if a spoon is used to stir a liquid then that spoon is touching that liquid 
+sent2: the spoon is used to stir soup 
+sent3: soup is a kind of thing 
+sent4: the soup is cooking on the stove 
+sent5: a thermal insulator slows the transfer of heat 
+sent6: if two things are touching then heat energy will be transferred between those things 
+sent7: the spoon in the example is made of wood 
+sent8: a spoon is a kind of thing 
+sent9: wood is an thermal insulator 
+sent10: cooking food requires adding heat energy to the food 
+sent11: transferring of heat causes the object to increase in temperature 
+sent12: soup is a kind of liquid 
+Proof: sent1 & sent12 -> int1: if a spoon is used to stir soup then that spoon is touching that soup 
+int1 & sent2 -> int2: the spoon is touching the soup; sent10 & sent4 -> int3: heat energy is added to the soup; int2 & int3 -> int4: heat energy is added to soup that is touching the spoon; sent3 & sent8 -> int5: soup and a spoon are kinds of things; int5 & sent6 -> int6: if soup and a spoon are touching then heat energy will be transferred between the soup and spoon; int4 & int6 -> int7: heat energy is transferring from the soup to the spoon; int7 & sent7 -> int8: heat energy is transferring from the soup to wood; sent5 & sent9 -> int9: wood can slow the transferring of the heat; int8 & int9 -> int10: the transferring of heat energy from soup to wood is slowed down; int10 & sent11 -> hypothesis;

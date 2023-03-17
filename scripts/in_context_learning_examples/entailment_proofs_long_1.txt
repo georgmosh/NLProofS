@@ -1,0 +1,105 @@
+Hypothesis: two tectonic plates pushing toward each other changes the earth's crust material into metamorphic rock
+Context:
+sent1: the continental crust mainly is made of granite 
+sent2: exposure to extreme heat and pressure changes igneous rock into metamorphic rock 
+sent3: continental crust is a kind of crust 
+sent4: two tectonic plates pushing toward each other cause intense heat and pressure in earth's crust 
+sent5: rock is a kind of material 
+sent6: the crust is made of different kinds of crust 
+sent7: basalt is a kind of igneous rock 
+sent8: the crust is a layer of the earth 
+sent9: the oceanic crust mainly is made of basalt 
+sent10: oceanic crust is a kind of crust 
+sent11: granite is a kind of igneous rock 
+sent12: intense can mean extreme 
+Proof: sent1 & sent11 -> int1: the continental crust is mainly made of igneous rock; sent7 & sent9 -> int2: the oceanic crust is mainly made of igneous rock; int1 & int2 -> int3: continental and oceanic crust are mainly made of igneous rock; sent10 & sent3 -> int4: continental and oceanic crust are kinds of crust; sent6 & sent8 -> int5: the earth's crust is made of different kinds of crust; int4 & int5 -> int6: the earth's crust is made of continental and oceanic crust; int3 & int6 -> int7: the earth's crust is mainly made of igneous rock; int7 & sent5 -> int8: the material of earth's crust is mainly igneous rock; int8 & sent2 -> int9: exposure to extreme heat and pressure changes the material of earth's crust into metamorphic rock; int9 & sent12 -> int10: exposure to intense heat and pressure changes the material of earth's crust into metamorphic rock; int10 & sent4 -> hypothesis;
+
+Hypothesis: using renewable resources to generate power reduces greenhouse gases
+Context:
+sent1: fossil fuels are a nonrenewable resource 
+sent2: if something increases something else then decreasing that something will decrease that something else 
+sent3: electrical power is a kind of power 
+sent4: burning something is a kind of action 
+sent5: to decrease something means to reduce that something 
+sent6: natural gas is used for generating electricity by burning in a power plant 
+sent7: if something causes an increase in something else then that something produces that something else 
+sent8: if something occurs by performing an action, then that action is required for that something to occur 
+sent9: as the use of renewable resources increases, use of nonrenewable resources will decrease 
+sent10: the burning of fossil fuels produces greenhouse gasses 
+sent11: natural gas is a kind of fossil fuel 
+sent12: electricity is a kind of electrical power 
+Proof: sent4 & sent8 -> int1: if something occurs by burning something else, then burning that something else is required for that something to occur; int1 & sent6 -> int2: using natural gas to generate electricity requires burning that natural gas; int2 & sent11 -> int3: using fossil fuels to generate electricity requires burning fossil fuels; int3 -> int4: using fossil fuels to generate power requires burning fossil fuels; sent12 & sent3 -> int5: electricity is a kind of power; int4 & int5 & sent10 -> int6: using fossil fuels to generate power produces greenhouse gasses; int6 & sent1 -> int7: using nonrenewable resources to generate power produces greenhouse gasses; int7 & sent7 -> int8: using nonrenewable resources to generate power increases greenhouse gasses; int8 & sent2 -> int9: decreasing the use of nonrenewable resources to generate power will decrease greenhouse gasses; int9 & sent9 -> int10: increasing the use of renewable resources to generate power will decrease greenhouse gasses; int10 & sent5 -> hypothesis;
+
+Hypothesis: an electric car has a positive impact on the environment / air quality / water quality / society by using less gasoline
+Context:
+sent1: electricity is a kind of alternative fuel 
+sent2: using a gasoline engine requires burning gasoline 
+sent3: pollution has a negative impact on the environment / air quality / water quality / society 
+sent4: an electric motor is a kind of electrical device 
+sent5: as the use of alternative fuels increases, the use of gasoline will decrease 
+sent6: if a certain something decreases the use of a resource then that certain something uses less of that resource than a regular something 
+sent7: if a machine contains a part then that machine uses that part 
+sent8: an electric car is a kind of machine 
+sent9: using less of something negative has a positive impact 
+sent10: an electric car contains an electric motor 
+sent11: an electrical device can be a part of a machine 
+sent12: burning gasoline / oil is a source of air pollution 
+sent13: an electrical device uses electricity to operate 
+Proof: sent5 & sent6 -> int1: something that uses alternative fuels uses less gasoline than a regular something; sent1 & sent13 -> int2: an electrical device uses alternative fuel to operate; int2 & sent4 -> int3: an electric motor uses alternative fuel to operate; int1 & int3 -> int4: a something that uses an electric motor uses less gasoline than a regular something; sent10 & sent8 -> int5: an electric car is a kind of machine that contains an electric motor; sent11 & sent7 -> int6: if a machine contains an electrical device then that machine uses that electrical device; int6 & sent4 -> int7: if a machine contains an electric motor then that machine uses that electric motor; int5 & int7 -> int8: an electric car uses an electric motor; int4 & int8 -> int9: electric car uses less gasoline than a regular car; sent12 & sent2 -> int10: using gasoline is a source of pollution; int10 & sent3 -> int11: using gasoline has a negative impact on the environment / air quality / water quality / society; int11 & sent9 -> int12: using less gasoline has a positive impact on the environment / air quality / water quality / society; int12 & int9 -> hypothesis;
+
+Hypothesis: overproduction of corn can negatively affect the environment by decreasing soil fertility
+Context:
+sent1: high quality / rich / good soil has a high number of nutrients / amount of nitrogen 
+sent2: to have a negative impact on something means to negatively affect that something 
+sent3: fertility is a property of soil that describes how fertile the soil is 
+sent4: plants are a kind of organism 
+sent5: soil provides nutrients for plants 
+sent6: fertile soil is high in quality 
+sent7: if a living thing requires something then that something has a positive impact on that living thing 
+sent8: organisms are a part of an environment 
+sent9: a plant requires soil for survival / to grow 
+sent10: decreasing something positive has a negative impact on a thing 
+sent11: overproduction of crops can cause soil fertility to decrease 
+sent12: corn is a kind of crop 
+Proof: sent11 & sent12 -> int1: overproduction of corn can cause soil fertility to decrease; sent5 & sent9 -> int2: a plant requires nutrients in soil to grow; int2 & sent7 -> int3: nutrients in soil have a positive impact on plants; sent1 & sent6 -> int4: fertile soil has a high number of nutrients; int4 & sent3 -> int5: soil with high fertility has a high number of nutrients; int3 & int5 -> int6: high soil fertility has a positive impact on plants; int6 & sent10 -> int7: decreasing soil fertility has a negative impact on plants; sent4 & sent8 -> int8: plants are a part of the environment; int7 & int8 -> int9: a decrease in soil fertility has a negative impact on environment; int1 & int9 -> int10: overproduction of corn can have a negative impact on the environment by decreasing soil fertility; int10 & sent2 -> hypothesis;
+
+Hypothesis: changing into the color of an arctic environment in the summer and winter is used for blending in with an environment by arctic foxes
+Context:
+sent1: an arctic fox is a kind of animal 
+sent2: color is a property of something that describes how that something looks 
+sent3: an arctic fox's fur is dark gray or brown in the summer 
+sent4: hiding means ability to be seen decreases for camouflage 
+sent5: if something is one color during one time and another color during another time, then at something changes color 
+sent6: some environments change color 
+sent7: when snow falls in an environment in an environment, that environment will become white 
+sent8: if an animal 's fur is a color then that animal is that color 
+sent9: snow falls during the winter in the arctic environment 
+sent10: snow melts during the summer in an arctic environment 
+sent11: an animal is a kind of organism 
+sent12: an example of camouflage is an organism looking like its environment 
+sent13: to blend into something means to be less able to see in something 
+sent14: camouflage is used for protection / hiding by prey / animals against predators / from predators 
+sent15: when snow in an environment melts, that environment will become dark gray or brown 
+sent16: an arctic fox's fur is white in the winter 
+Proof: sent12 & sent2 -> int1: an example of camouflage is organism having the same color as its environment; int1 & sent6 -> int2: an example of camouflage is organism changing into the color of the environment; sent1 & sent11 -> int3: an arctic fox is a kind of organism; int2 & int3 -> int4: an example of camouflage is an arctic fox changing into the color of the environment; sent16 & sent3 -> int5: an arctic fox's fur is dark grey or brown in the summer and white in the winter; sent1 & sent8 -> int6: if an arctic fox's fur is a color then that arctic fox is that color; int5 & int6 -> int7: an arctic fox is dark grey or brown in the summer and white in the winter; sent10 & sent15 -> int8: an arctic environment is dark gray or brown in the summer; sent7 & sent9 -> int9: an arctic environment is white in the winter; int8 & int9 -> int10: an arctic environment is dark gray or brown in the summer and white in the winter; int10 & int7 -> int11: an arctic fox and arctic environment are both dark gray or brown in the summer and white in the winter; int11 & sent5 -> int12: an arctic fox and arctic environment are both change color to dark gray or brown in the summer and white in the winter; int12 & int4 -> int13: an example of camouflage is an arctic fox changing into the color of an arctic environment in the summer and winter; sent1 & sent14 -> int14: camouflage is used for hiding by arctic foxes from predators; int13 & int14 -> int15: changing into the color of an arctic environment in the summer and winter is used for hiding by arctic foxes; sent13 & sent4 -> int16: to hide in something can mean to blend in with something; int15 & int16 -> hypothesis;
+
+Hypothesis: a gray rat snake is likely to be in a gravel pit
+Context:
+sent1: things that are the same color blend into each other 
+sent2: to blend into something means to be difficult to see in something 
+sent3: being protected from predators has a positive impact on an animal's survival 
+sent4: camouflage is used for protection by animals against predators 
+sent5: an adaptation is a kind of inherited characteristic that helps an animal survive / reproduce 
+sent6: the coloration of parts of an animal are inherited characteristics 
+sent7: gravel is usually gray in color 
+sent8: camouflage is a kind of adaptation for hiding in an environment 
+sent9: animals adapt to their environment 
+sent10: an animal is a kind of organism 
+sent11: a rat snake is a kind of animal 
+sent12: an environment is a kind of thing 
+sent13: if something has a positive impact on an animal's survival then that animal will likely do that something 
+sent14: a rat snake is gray 
+sent15: hiding means ability to be seen decreases for protection 
+sent16: a gravel pit contains gravel 
+sent17: an animal is a kind of thing 
+Proof: sent11 & sent14 -> int1: a rat snake is a kind of animal that is gray; sent5 & sent6 -> int2: coloration is a kind of adaptation; sent1 & sent2 -> int3: if a thing is the same color as another thing then that thing is difficult to see in that other thing; int3 & sent15 -> int4: a thing having the same color as another thing is used for hiding; sent12 & sent17 -> int5: an animal and an environment are kinds of things; int4 & int5 -> int6: an animal having the same color as its environment is used for hiding; int2 & int6 -> int7: coloration is a kind of adaptation for hiding; int7 & sent9 -> int8: coloration is a kind of adaptation for hiding in an environment; int8 & sent10 & sent8 -> int9: an example of camouflage is organism having the same color as its environment; sent3 & sent4 -> int10: camouflage has a positive impact on an animal's survival; int10 & int9 -> int11: an animal having the same color as its environment has a positive impact on that animal's survival; int11 & sent13 -> int12: animals are likely to have the same color as their environment; int1 & int12 -> int13: a gray rat snake is likely to be in a gray environment; sent16 & sent7 -> int14: a gravel pit is usually gray in color; int13 & int14 -> hypothesis;

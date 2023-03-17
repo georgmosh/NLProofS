@@ -1,0 +1,257 @@
+Hypothesis: two tectonic plates pushing toward each other changes the earth's crust material into metamorphic rock
+Context:
+sent1: the continental crust mainly is made of granite 
+sent2: exposure to extreme heat and pressure changes igneous rock into metamorphic rock 
+sent3: continental crust is a kind of crust 
+sent4: two tectonic plates pushing toward each other cause intense heat and pressure in earth's crust 
+sent5: rock is a kind of material 
+sent6: the crust is made of different kinds of crust 
+sent7: basalt is a kind of igneous rock 
+sent8: the crust is a layer of the earth 
+sent9: the oceanic crust mainly is made of basalt 
+sent10: oceanic crust is a kind of crust 
+sent11: granite is a kind of igneous rock 
+sent12: intense can mean extreme 
+Proof: sent1 & sent11 -> int1: the continental crust is mainly made of igneous rock; sent7 & sent9 -> int2: the oceanic crust is mainly made of igneous rock; int1 & int2 -> int3: continental and oceanic crust are mainly made of igneous rock; sent10 & sent3 -> int4: continental and oceanic crust are kinds of crust; sent6 & sent8 -> int5: the earth's crust is made of different kinds of crust; int4 & int5 -> int6: the earth's crust is made of continental and oceanic crust; int3 & int6 -> int7: the earth's crust is mainly made of igneous rock; int7 & sent5 -> int8: the material of earth's crust is mainly igneous rock; int8 & sent2 -> int9: exposure to extreme heat and pressure changes the material of earth's crust into metamorphic rock; int9 & sent12 -> int10: exposure to intense heat and pressure changes the material of earth's crust into metamorphic rock; int10 & sent4 -> hypothesis;
+
+Hypothesis: using renewable resources to generate power reduces greenhouse gases
+Context:
+sent1: fossil fuels are a nonrenewable resource 
+sent2: if something increases something else then decreasing that something will decrease that something else 
+sent3: electrical power is a kind of power 
+sent4: burning something is a kind of action 
+sent5: to decrease something means to reduce that something 
+sent6: natural gas is used for generating electricity by burning in a power plant 
+sent7: if something causes an increase in something else then that something produces that something else 
+sent8: if something occurs by performing an action, then that action is required for that something to occur 
+sent9: as the use of renewable resources increases, use of nonrenewable resources will decrease 
+sent10: the burning of fossil fuels produces greenhouse gasses 
+sent11: natural gas is a kind of fossil fuel 
+sent12: electricity is a kind of electrical power 
+Proof: sent4 & sent8 -> int1: if something occurs by burning something else, then burning that something else is required for that something to occur; int1 & sent6 -> int2: using natural gas to generate electricity requires burning that natural gas; int2 & sent11 -> int3: using fossil fuels to generate electricity requires burning fossil fuels; int3 -> int4: using fossil fuels to generate power requires burning fossil fuels; sent12 & sent3 -> int5: electricity is a kind of power; int4 & int5 & sent10 -> int6: using fossil fuels to generate power produces greenhouse gasses; int6 & sent1 -> int7: using nonrenewable resources to generate power produces greenhouse gasses; int7 & sent7 -> int8: using nonrenewable resources to generate power increases greenhouse gasses; int8 & sent2 -> int9: decreasing the use of nonrenewable resources to generate power will decrease greenhouse gasses; int9 & sent9 -> int10: increasing the use of renewable resources to generate power will decrease greenhouse gasses; int10 & sent5 -> hypothesis;
+
+Hypothesis: an electric car has a positive impact on the environment / air quality / water quality / society by using less gasoline
+Context:
+sent1: electricity is a kind of alternative fuel 
+sent2: using a gasoline engine requires burning gasoline 
+sent3: pollution has a negative impact on the environment / air quality / water quality / society 
+sent4: an electric motor is a kind of electrical device 
+sent5: as the use of alternative fuels increases, the use of gasoline will decrease 
+sent6: if a certain something decreases the use of a resource then that certain something uses less of that resource than a regular something 
+sent7: if a machine contains a part then that machine uses that part 
+sent8: an electric car is a kind of machine 
+sent9: using less of something negative has a positive impact 
+sent10: an electric car contains an electric motor 
+sent11: an electrical device can be a part of a machine 
+sent12: burning gasoline / oil is a source of air pollution 
+sent13: an electrical device uses electricity to operate 
+Proof: sent5 & sent6 -> int1: something that uses alternative fuels uses less gasoline than a regular something; sent1 & sent13 -> int2: an electrical device uses alternative fuel to operate; int2 & sent4 -> int3: an electric motor uses alternative fuel to operate; int1 & int3 -> int4: a something that uses an electric motor uses less gasoline than a regular something; sent10 & sent8 -> int5: an electric car is a kind of machine that contains an electric motor; sent11 & sent7 -> int6: if a machine contains an electrical device then that machine uses that electrical device; int6 & sent4 -> int7: if a machine contains an electric motor then that machine uses that electric motor; int5 & int7 -> int8: an electric car uses an electric motor; int4 & int8 -> int9: electric car uses less gasoline than a regular car; sent12 & sent2 -> int10: using gasoline is a source of pollution; int10 & sent3 -> int11: using gasoline has a negative impact on the environment / air quality / water quality / society; int11 & sent9 -> int12: using less gasoline has a positive impact on the environment / air quality / water quality / society; int12 & int9 -> hypothesis;
+
+Hypothesis: overproduction of corn can negatively affect the environment by decreasing soil fertility
+Context:
+sent1: high quality / rich / good soil has a high number of nutrients / amount of nitrogen 
+sent2: to have a negative impact on something means to negatively affect that something 
+sent3: fertility is a property of soil that describes how fertile the soil is 
+sent4: plants are a kind of organism 
+sent5: soil provides nutrients for plants 
+sent6: fertile soil is high in quality 
+sent7: if a living thing requires something then that something has a positive impact on that living thing 
+sent8: organisms are a part of an environment 
+sent9: a plant requires soil for survival / to grow 
+sent10: decreasing something positive has a negative impact on a thing 
+sent11: overproduction of crops can cause soil fertility to decrease 
+sent12: corn is a kind of crop 
+Proof: sent11 & sent12 -> int1: overproduction of corn can cause soil fertility to decrease; sent5 & sent9 -> int2: a plant requires nutrients in soil to grow; int2 & sent7 -> int3: nutrients in soil have a positive impact on plants; sent1 & sent6 -> int4: fertile soil has a high number of nutrients; int4 & sent3 -> int5: soil with high fertility has a high number of nutrients; int3 & int5 -> int6: high soil fertility has a positive impact on plants; int6 & sent10 -> int7: decreasing soil fertility has a negative impact on plants; sent4 & sent8 -> int8: plants are a part of the environment; int7 & int8 -> int9: a decrease in soil fertility has a negative impact on environment; int1 & int9 -> int10: overproduction of corn can have a negative impact on the environment by decreasing soil fertility; int10 & sent2 -> hypothesis;
+
+Hypothesis: changing into the color of an arctic environment in the summer and winter is used for blending in with an environment by arctic foxes
+Context:
+sent1: an arctic fox is a kind of animal 
+sent2: color is a property of something that describes how that something looks 
+sent3: an arctic fox's fur is dark gray or brown in the summer 
+sent4: hiding means ability to be seen decreases for camouflage 
+sent5: if something is one color during one time and another color during another time, then at something changes color 
+sent6: some environments change color 
+sent7: when snow falls in an environment in an environment, that environment will become white 
+sent8: if an animal 's fur is a color then that animal is that color 
+sent9: snow falls during the winter in the arctic environment 
+sent10: snow melts during the summer in an arctic environment 
+sent11: an animal is a kind of organism 
+sent12: an example of camouflage is an organism looking like its environment 
+sent13: to blend into something means to be less able to see in something 
+sent14: camouflage is used for protection / hiding by prey / animals against predators / from predators 
+sent15: when snow in an environment melts, that environment will become dark gray or brown 
+sent16: an arctic fox's fur is white in the winter 
+Proof: sent12 & sent2 -> int1: an example of camouflage is organism having the same color as its environment; int1 & sent6 -> int2: an example of camouflage is organism changing into the color of the environment; sent1 & sent11 -> int3: an arctic fox is a kind of organism; int2 & int3 -> int4: an example of camouflage is an arctic fox changing into the color of the environment; sent16 & sent3 -> int5: an arctic fox's fur is dark grey or brown in the summer and white in the winter; sent1 & sent8 -> int6: if an arctic fox's fur is a color then that arctic fox is that color; int5 & int6 -> int7: an arctic fox is dark grey or brown in the summer and white in the winter; sent10 & sent15 -> int8: an arctic environment is dark gray or brown in the summer; sent7 & sent9 -> int9: an arctic environment is white in the winter; int8 & int9 -> int10: an arctic environment is dark gray or brown in the summer and white in the winter; int10 & int7 -> int11: an arctic fox and arctic environment are both dark gray or brown in the summer and white in the winter; int11 & sent5 -> int12: an arctic fox and arctic environment are both change color to dark gray or brown in the summer and white in the winter; int12 & int4 -> int13: an example of camouflage is an arctic fox changing into the color of an arctic environment in the summer and winter; sent1 & sent14 -> int14: camouflage is used for hiding by arctic foxes from predators; int13 & int14 -> int15: changing into the color of an arctic environment in the summer and winter is used for hiding by arctic foxes; sent13 & sent4 -> int16: to hide in something can mean to blend in with something; int15 & int16 -> hypothesis;
+
+Hypothesis: a gray rat snake is likely to be in a gravel pit
+Context:
+sent1: things that are the same color blend into each other 
+sent2: to blend into something means to be difficult to see in something 
+sent3: being protected from predators has a positive impact on an animal's survival 
+sent4: camouflage is used for protection by animals against predators 
+sent5: an adaptation is a kind of inherited characteristic that helps an animal survive / reproduce 
+sent6: the coloration of parts of an animal are inherited characteristics 
+sent7: gravel is usually gray in color 
+sent8: camouflage is a kind of adaptation for hiding in an environment 
+sent9: animals adapt to their environment 
+sent10: an animal is a kind of organism 
+sent11: a rat snake is a kind of animal 
+sent12: an environment is a kind of thing 
+sent13: if something has a positive impact on an animal's survival then that animal will likely do that something 
+sent14: a rat snake is gray 
+sent15: hiding means ability to be seen decreases for protection 
+sent16: a gravel pit contains gravel 
+sent17: an animal is a kind of thing 
+Proof: sent11 & sent14 -> int1: a rat snake is a kind of animal that is gray; sent5 & sent6 -> int2: coloration is a kind of adaptation; sent1 & sent2 -> int3: if a thing is the same color as another thing then that thing is difficult to see in that other thing; int3 & sent15 -> int4: a thing having the same color as another thing is used for hiding; sent12 & sent17 -> int5: an animal and an environment are kinds of things; int4 & int5 -> int6: an animal having the same color as its environment is used for hiding; int2 & int6 -> int7: coloration is a kind of adaptation for hiding; int7 & sent9 -> int8: coloration is a kind of adaptation for hiding in an environment; int8 & sent10 & sent8 -> int9: an example of camouflage is organism having the same color as its environment; sent3 & sent4 -> int10: camouflage has a positive impact on an animal's survival; int10 & int9 -> int11: an animal having the same color as its environment has a positive impact on that animal's survival; int11 & sent13 -> int12: animals are likely to have the same color as their environment; int1 & int12 -> int13: a gray rat snake is likely to be in a gray environment; sent16 & sent7 -> int14: a gravel pit is usually gray in color; int13 & int14 -> hypothesis;
+
+Hypothesis: bats must emit sound in order to hunt their prey
+Context:
+sent1: a bat is a kind of animal 
+sent2: bats find their prey by sensing echos 
+sent3: echo is when sound reflects off of a surface 
+sent4: a sound must first be emitted before it can reflect off of a surface 
+sent5: hearing is used for sensing sounds by animals 
+sent6: echolocation is when some animals detect objects by hearing echoes by emitting sound 
+sent7: an echo must occur in order to be heard 
+sent8: hearing is a kind of sense 
+sent9: hunting requires sensing prey 
+sent10: an echo is a kind of sound 
+Proof: 
+sent3 & sent4 -> int1: a sound must be emitted for an echo to occur; sent6 & sent7 -> int2: echolocation requires echos to occur; int1 & int2 -> int3: a sound must be emitted in order for an animal to echolocate; sent1 & sent2 -> int4: bats are a kind of animal that finds their prey by sensing echos; int4 & sent6 -> int5: bats find their prey by using echolocation; int3 & int5 -> int6: bats must emit sound in order to echolocate; sent8 & sent9 -> int7: hearing can be used for hunting prey; int7 & sent5 -> int8: sensing sounds can be used for hunting prey; int8 & sent10 -> int9: sensing echos can be used for hunting prey; int9 & sent6 -> int10: echolocation can be used for hunting prey; int10 & int6 -> hypothesis;
+
+Hypothesis: plants on tropical rainforest floors grow large leaves due to the low availability of sunlight
+Context:
+sent1: as the size of a leaf increases, the amount of sunlight absorbed by that leaf will increase 
+sent2: an adaptation / an ability has a positive impact on an animal 's / living thing 's survival / health / ability to reproduce 
+sent3: large canopies / trees block sunlight from reaching the ground 
+sent4: forest canopies blocking sunlight decreases the availability of sunlight on the forest floor 
+sent5: larger means greater / higher / more / increase in size 
+sent6: a leaf is a part of a green plant 
+sent7: tropical rainforests contain many large trees 
+sent8: a plant requires sunlight for photosynthesis 
+sent9: a leaf absorbs sunlight to perform photosynthesis 
+sent10: a plant is a kind of living thing 
+sent11: a required resource being low in availability has a negative impact on the something that requires that resource 
+sent12: a plant requires photosynthesis to grow / survive 
+sent13: if a living thing must do something to survive, then increasing that living thing's ability to do that something has a positive impact on that living thing's survival 
+Proof: sent3 & sent7 -> int1: sunlight is blocked by large canopies / trees in rainforests; int1 & sent4 -> int2: tropical rainforest floors are low in availability of sunlight; sent11 & sent8 -> int3: a low availability of sunlight has a negative impact on plants; int2 & int3 -> int4: low availability of sunlight has a negative impact on plants in tropical rainforest floors; sent1 & sent5 -> int5: large leaves increase a plant's ability to absorb sunlight; sent6 & sent9 -> int6: a plant absorbs sunlight with its leaves to perform photosynthesis; int6 & sent12 -> int7: a plant must absorb sunlight with its leaves to survive; sent10 & sent13 -> int8: if a plant must do something to survive, then increasing that plant's ability to do that something has a positive impact on that plant's survival; int7 & int8 -> int9: increasing a plant's ability to absorb sunlight with its leaves has a positive impact on that plant's survival; int5 & int9 -> int10: large leaves have a positive impact on a plant's survival by increasing that plant's ability to absorb sunlight; int10 & sent2 -> int11: large leaves are a kind of adaptation for absorbing sunlight; int11 & int4 -> hypothesis;
+
+Hypothesis: cutting down a forest causes deer to move to find shelter in another habitat
+Context:
+sent1: if a habitat can no longer support animals then those animals will move to another area 
+sent2: cutting down trees in a forest causes the number of trees to decrease in that forest 
+sent3: if something is destroyed then that something no longer exists 
+sent4: a deer lives in a forest 
+sent5: cutting down a forest means cutting down trees in a forest 
+sent6: if a habitat is removed then that habitat is destroyed 
+sent7: if an animal 's habitat no longer exists then that animal will die 
+sent8: a deer is a kind of animal 
+sent9: animals live in their habitat 
+sent10: if the state of a habitat causes animals in that habitat to die then that habitat can not support animals 
+sent11: a shelter is used for living in by animals 
+sent12: decreasing the number of trees in a forest is a kind of method for removing a forest 
+Proof: sent10 & sent7 -> int1: if an animal's habitat no longer exists then that habitat can not support that animal; int1 & sent3 -> int2: if a habitat is destroyed then that habitat can not support animals; int2 & sent1 -> int3: habitat destruction causes animals to move to another habitat; sent11 & sent9 -> int4: animals' shelters are in their habitats; int3 & int4 -> int5: habitat destruction causes animals to move to find shelter in another habitat; sent2 & sent5 -> int6: cutting down a forest causes the number of trees to decrease in that forest; int6 & sent12 -> int7: cutting down a forest is a kind of method for removing a forest; int7 & sent6 -> int8: cutting down a forest will destroy a forest; int5 & int8 -> int9: cutting down a forest causes animals that live in that forest to move to find shelter in another habitat; sent4 & sent8 -> int10: deer are a kind of animal that live in a forest; int10 & int9 -> hypothesis;
+
+Hypothesis: a plant requires a specific climate to grow and survive
+Context:
+sent1: if an organism requires something then that something is a resource for that organism 
+sent2: clouds can block sunlight 
+sent3: a plant is a kind of organism 
+sent4: different plants require different amounts of certain resources to grow / survive 
+sent5: precipitation is a property of weather 
+sent6: a plant requires photosynthesis to grow / survive 
+sent7: climate is a property of environment 
+sent8: temperature is a property of weather 
+sent9: precipitation is water that falls to the ground from clouds 
+sent10: plants require water for survival / to grow 
+sent11: if something is a property of something else then that something else determines that something 
+sent12: a plant requires sunlight to perform photosynthesis 
+sent13: climate is the usual kind of weather in a location over a period of time 
+Proof: sent13 & sent7 -> int1: an environment's climate is the usual kind of weather in that environment over a period of time; sent5 & sent8 -> int2: temperature and precipitation are properties of weather; int2 & sent11 -> int3: weather determines temperature and precipitation; int1 & int3 -> int4: an environment's climate determines the temperature and precipitation of a location; sent2 & sent9 -> int5: precipitation can affect the amount of water and sunlight in an environment; int4 & int5 -> int6: an environment's climate determines the temperature and amount of water and sunlight in a location; sent12 & sent6 -> int7: a plant requires sunlight to grow / survive; int7 & sent10 -> int8: plants require water and sunlight to grow / survive; sent1 & sent3 -> int9: if a plant requires something then that something is a resource for that plant; int8 & int9 -> int10: water and sunlight are resources for plants; int10 & sent4 -> int11: different plants require different amounts of water and sunlight to grow / survive; int11 & int6 -> hypothesis;
+
+Hypothesis: smoking causes direct damage to the lungs
+Context:
+sent1: smoking is a kind of method for inhaling smoke 
+sent2: harming something has a negative impact on / effect on that something 
+sent3: a lung is a kind of internal organ 
+sent4: if something harms something else, then that something also harms the parts of that something else 
+sent5: to inhale means to breathe in 
+sent6: smoke is a kind of gas 
+sent7: internal organs are a part of the body 
+sent8: damage has a negative impact on a thing 
+sent9: when a lung breathes in air the air goes directly to the lungs 
+sent10: smoking harms the body 
+sent11: air contains gasses 
+sent12: a lung is a kind of organ for breathing air 
+Proof: sent3 & sent7 -> int1: lungs are a part of the body; int1 & sent4 -> int2: if something harms the body, then that something also harms the lungs; int2 & sent10 -> int3: smoking harms the lungs; int3 & sent1 -> int4: inhaling smoke by smoking harms the lungs; sent2 & sent8 -> int5: damage can mean harm; int4 & int5 -> int6: inhaling smoke by smoking causes damage to the lungs; sent12 & sent9 -> int7: a lung is a kind of organ for directly breathing in air; int7 & sent11 -> int8: a lung is a kind of organ for directly breathing in gasses; int8 & sent6 -> int9: lungs can be used for directly breathing in smoke; int9 & sent5 -> int10: lungs can be used for directly inhaling smoke; int10 & int6 -> hypothesis;
+
+Hypothesis: producers get energy by using the sun to make food
+Context:
+sent1: if a thing uses something that comes from a source then that thing uses the source of that something 
+sent2: a plant requires sunlight for photosynthesis 
+sent3: photosynthesis is a kind of chemical process 
+sent4: green plants are a kind of producer 
+sent5: a plant is a kind of living thing 
+sent6: one can get something from a source 
+sent7: green plants provide food for themselves / animals / consumers by performing photosynthesis 
+sent8: making something is a kind of method for providing something 
+sent9: if a living thing requires something for a process then that living thing uses that something for that process 
+sent10: food is a source of energy for plants 
+sent11: the sun is the source of solar energy called sunlight 
+sent12: green plant is a kind of plant 
+Proof: sent10 & sent4 -> int1: food is a source of energy for producers; int1 & sent6 -> int2: producers can get energy from food; sent7 & sent8 -> int3: green plants make food by performing photosynthesis; sent3 & sent9 -> int4: if a living thing requires something for photosynthesis then that living thing uses that something for photosynthesis; int4 & sent2 & sent5 -> int5: a plant uses sunlight for photosynthesis; int5 & sent12 -> int6: green plant uses sunlight for photosynthesis; int3 & int6 -> int7: a green plant uses sunlight to make food; sent1 & sent11 -> int8: if a thing uses sunlight then that thing uses the sun; int7 & int8 -> int9: a green plant uses the sun to make food; int9 & sent4 -> int10: a producer uses the sun to make food; int10 & int2 -> hypothesis;
+
+Hypothesis: the water will boil if heat energy absorbed from the pot is increased past the boiling point
+Context:
+sent1: if a thermal conductor is exposed to a source of heat then that conductor may become hot 
+sent2: the pot is exposed to a stove 
+sent3: metal is a thermal energy conductor 
+sent4: a pot is made of metal for cooking 
+sent5: a pot is a kind of object 
+sent6: heating means adding heat 
+sent7: a pot contains water 
+sent8: a stove is a source of heat 
+sent9: boiling happens when liquids are heated above their boiling point 
+sent10: a pot is a kind of container 
+sent11: water is a kind of liquid at room temperature 
+sent12: if a container contains something then that container touches that something 
+sent13: if an object is hot and it touches something, that something will increase temperature by absorbing heat energy from the object 
+Proof: sent10 & sent12 -> int1: if a pot contains something then that pot touches that something; int1 & sent7 -> int2: the pot is touching the water; sent3 & sent4 -> int3: a pot is a thermal energy conductor; sent1 & sent8 -> int4: if a thermal conductor is exposed to a stove then that conductor may become hot; int3 & int4 -> int5: if a pot is exposed to a stove then that pot may become hot; int5 & sent2 -> int6: the pot may become hot; int2 & int6 -> int7: the hot pot is touching the water; int7 & sent13 & sent5 -> int8: the water will increase temperature by absorbing heat energy from the pot; sent6 & sent9 -> int9: boiling happens when liquids increase heat energy above their boiling point; int9 & sent11 -> int10: boiling happens when water increases heat energy above its boiling point; int10 & int8 -> hypothesis;
+
+Hypothesis: the water from the melted ice cube will then evaporate
+Context:
+sent1: a pan is put on an open flame 
+sent2: a flame is a part of a fire 
+sent3: evaporation means a substance changes from a liquid into a gas by increasing heat energy 
+sent4: if a substance is exposed to a source of heat then that substance may become hot / warm 
+sent5: becoming hot means increasing in heat energy 
+sent6: an ice cube is placed in the pan 
+sent7: if thermal conductor is exposed to a source of heat then that conductor may become hot / warm 
+sent8: a hot object is a source of heat 
+sent9: metal is a thermal conductor 
+sent10: fire gives off heat 
+sent11: a source of something gives off that something 
+sent12: melting means a substance changes from a solid into a liquid by increasing heat energy 
+sent13: if something is placed over a heat source then that something is exposed to that heat source 
+sent14: a pan is made of metal for cooking 
+sent15: if an object is exposed to a source of heat then that object may become hot 
+sent16: an ice cube is a kind of object 
+sent17: a pan is a kind of object 
+Proof: sent14 & sent9 -> int1: a pan is a thermal conductor; sent10 & sent2 -> int2: the flame gives off heat; int2 & sent11 -> int3: the flame is a source of heat; int3 & sent1 & sent13 -> int4: the pan is exposed to a source of heat; int1 & int4 & sent7 -> int5: the pan will become hot; int5 & sent17 -> int6: the hot pan is a kind of hot object; int6 & sent8 -> int7: the hot pan is a source of heat; int7 & sent13 & sent6 -> int8: the ice cube in the hot pan is exposed to a source of heat; int8 & sent15 & sent16 -> int9: the ice cube in the hot pan will become hot; int9 & sent12 & sent5 -> int10: the ice cube will melt and change into water in hot the pan; int10 & int7 -> int11: the water from the melted ice cube in the pan is exposed to a source of heat; int11 & sent4 -> int12: the water from the melted ice cube will become hot; int12 & sent3 & sent5 -> hypothesis;
+
+Hypothesis: the wood will increase temperature slower
+Context:
+sent1: if a spoon is used to stir a liquid then that spoon is touching that liquid 
+sent2: the spoon is used to stir soup 
+sent3: soup is a kind of thing 
+sent4: the soup is cooking on the stove 
+sent5: a thermal insulator slows the transfer of heat 
+sent6: if two things are touching then heat energy will be transferred between those things 
+sent7: the spoon in the example is made of wood 
+sent8: a spoon is a kind of thing 
+sent9: wood is an thermal insulator 
+sent10: cooking food requires adding heat energy to the food 
+sent11: transferring of heat causes the object to increase in temperature 
+sent12: soup is a kind of liquid 
+Proof: sent1 & sent12 -> int1: if a spoon is used to stir soup then that spoon is touching that soup 
+int1 & sent2 -> int2: the spoon is touching the soup; sent10 & sent4 -> int3: heat energy is added to the soup; int2 & int3 -> int4: heat energy is added to soup that is touching the spoon; sent3 & sent8 -> int5: soup and a spoon are kinds of things; int5 & sent6 -> int6: if soup and a spoon are touching then heat energy will be transferred between the soup and spoon; int4 & int6 -> int7: heat energy is transferring from the soup to the spoon; int7 & sent7 -> int8: heat energy is transferring from the soup to wood; sent5 & sent9 -> int9: wood can slow the transferring of the heat; int8 & int9 -> int10: the transferring of heat energy from soup to wood is slowed down; int10 & sent11 -> hypothesis;

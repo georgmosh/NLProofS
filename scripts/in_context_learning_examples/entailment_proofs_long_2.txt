@@ -1,0 +1,80 @@
+Hypothesis: bats must emit sound in order to hunt their prey
+Context:
+sent1: a bat is a kind of animal 
+sent2: bats find their prey by sensing echos 
+sent3: echo is when sound reflects off of a surface 
+sent4: a sound must first be emitted before it can reflect off of a surface 
+sent5: hearing is used for sensing sounds by animals 
+sent6: echolocation is when some animals detect objects by hearing echoes by emitting sound 
+sent7: an echo must occur in order to be heard 
+sent8: hearing is a kind of sense 
+sent9: hunting requires sensing prey 
+sent10: an echo is a kind of sound 
+Proof: 
+sent3 & sent4 -> int1: a sound must be emitted for an echo to occur; sent6 & sent7 -> int2: echolocation requires echos to occur; int1 & int2 -> int3: a sound must be emitted in order for an animal to echolocate; sent1 & sent2 -> int4: bats are a kind of animal that finds their prey by sensing echos; int4 & sent6 -> int5: bats find their prey by using echolocation; int3 & int5 -> int6: bats must emit sound in order to echolocate; sent8 & sent9 -> int7: hearing can be used for hunting prey; int7 & sent5 -> int8: sensing sounds can be used for hunting prey; int8 & sent10 -> int9: sensing echos can be used for hunting prey; int9 & sent6 -> int10: echolocation can be used for hunting prey; int10 & int6 -> hypothesis;
+
+Hypothesis: plants on tropical rainforest floors grow large leaves due to the low availability of sunlight
+Context:
+sent1: as the size of a leaf increases, the amount of sunlight absorbed by that leaf will increase 
+sent2: an adaptation / an ability has a positive impact on an animal 's / living thing 's survival / health / ability to reproduce 
+sent3: large canopies / trees block sunlight from reaching the ground 
+sent4: forest canopies blocking sunlight decreases the availability of sunlight on the forest floor 
+sent5: larger means greater / higher / more / increase in size 
+sent6: a leaf is a part of a green plant 
+sent7: tropical rainforests contain many large trees 
+sent8: a plant requires sunlight for photosynthesis 
+sent9: a leaf absorbs sunlight to perform photosynthesis 
+sent10: a plant is a kind of living thing 
+sent11: a required resource being low in availability has a negative impact on the something that requires that resource 
+sent12: a plant requires photosynthesis to grow / survive 
+sent13: if a living thing must do something to survive, then increasing that living thing's ability to do that something has a positive impact on that living thing's survival 
+Proof: sent3 & sent7 -> int1: sunlight is blocked by large canopies / trees in rainforests; int1 & sent4 -> int2: tropical rainforest floors are low in availability of sunlight; sent11 & sent8 -> int3: a low availability of sunlight has a negative impact on plants; int2 & int3 -> int4: low availability of sunlight has a negative impact on plants in tropical rainforest floors; sent1 & sent5 -> int5: large leaves increase a plant's ability to absorb sunlight; sent6 & sent9 -> int6: a plant absorbs sunlight with its leaves to perform photosynthesis; int6 & sent12 -> int7: a plant must absorb sunlight with its leaves to survive; sent10 & sent13 -> int8: if a plant must do something to survive, then increasing that plant's ability to do that something has a positive impact on that plant's survival; int7 & int8 -> int9: increasing a plant's ability to absorb sunlight with its leaves has a positive impact on that plant's survival; int5 & int9 -> int10: large leaves have a positive impact on a plant's survival by increasing that plant's ability to absorb sunlight; int10 & sent2 -> int11: large leaves are a kind of adaptation for absorbing sunlight; int11 & int4 -> hypothesis;
+
+Hypothesis: cutting down a forest causes deer to move to find shelter in another habitat
+Context:
+sent1: if a habitat can no longer support animals then those animals will move to another area 
+sent2: cutting down trees in a forest causes the number of trees to decrease in that forest 
+sent3: if something is destroyed then that something no longer exists 
+sent4: a deer lives in a forest 
+sent5: cutting down a forest means cutting down trees in a forest 
+sent6: if a habitat is removed then that habitat is destroyed 
+sent7: if an animal 's habitat no longer exists then that animal will die 
+sent8: a deer is a kind of animal 
+sent9: animals live in their habitat 
+sent10: if the state of a habitat causes animals in that habitat to die then that habitat can not support animals 
+sent11: a shelter is used for living in by animals 
+sent12: decreasing the number of trees in a forest is a kind of method for removing a forest 
+Proof: sent10 & sent7 -> int1: if an animal's habitat no longer exists then that habitat can not support that animal; int1 & sent3 -> int2: if a habitat is destroyed then that habitat can not support animals; int2 & sent1 -> int3: habitat destruction causes animals to move to another habitat; sent11 & sent9 -> int4: animals' shelters are in their habitats; int3 & int4 -> int5: habitat destruction causes animals to move to find shelter in another habitat; sent2 & sent5 -> int6: cutting down a forest causes the number of trees to decrease in that forest; int6 & sent12 -> int7: cutting down a forest is a kind of method for removing a forest; int7 & sent6 -> int8: cutting down a forest will destroy a forest; int5 & int8 -> int9: cutting down a forest causes animals that live in that forest to move to find shelter in another habitat; sent4 & sent8 -> int10: deer are a kind of animal that live in a forest; int10 & int9 -> hypothesis;
+
+Hypothesis: a plant requires a specific climate to grow and survive
+Context:
+sent1: if an organism requires something then that something is a resource for that organism 
+sent2: clouds can block sunlight 
+sent3: a plant is a kind of organism 
+sent4: different plants require different amounts of certain resources to grow / survive 
+sent5: precipitation is a property of weather 
+sent6: a plant requires photosynthesis to grow / survive 
+sent7: climate is a property of environment 
+sent8: temperature is a property of weather 
+sent9: precipitation is water that falls to the ground from clouds 
+sent10: plants require water for survival / to grow 
+sent11: if something is a property of something else then that something else determines that something 
+sent12: a plant requires sunlight to perform photosynthesis 
+sent13: climate is the usual kind of weather in a location over a period of time 
+Proof: sent13 & sent7 -> int1: an environment's climate is the usual kind of weather in that environment over a period of time; sent5 & sent8 -> int2: temperature and precipitation are properties of weather; int2 & sent11 -> int3: weather determines temperature and precipitation; int1 & int3 -> int4: an environment's climate determines the temperature and precipitation of a location; sent2 & sent9 -> int5: precipitation can affect the amount of water and sunlight in an environment; int4 & int5 -> int6: an environment's climate determines the temperature and amount of water and sunlight in a location; sent12 & sent6 -> int7: a plant requires sunlight to grow / survive; int7 & sent10 -> int8: plants require water and sunlight to grow / survive; sent1 & sent3 -> int9: if a plant requires something then that something is a resource for that plant; int8 & int9 -> int10: water and sunlight are resources for plants; int10 & sent4 -> int11: different plants require different amounts of water and sunlight to grow / survive; int11 & int6 -> hypothesis;
+
+Hypothesis: smoking causes direct damage to the lungs
+Context:
+sent1: smoking is a kind of method for inhaling smoke 
+sent2: harming something has a negative impact on / effect on that something 
+sent3: a lung is a kind of internal organ 
+sent4: if something harms something else, then that something also harms the parts of that something else 
+sent5: to inhale means to breathe in 
+sent6: smoke is a kind of gas 
+sent7: internal organs are a part of the body 
+sent8: damage has a negative impact on a thing 
+sent9: when a lung breathes in air the air goes directly to the lungs 
+sent10: smoking harms the body 
+sent11: air contains gasses 
+sent12: a lung is a kind of organ for breathing air 
+Proof: sent3 & sent7 -> int1: lungs are a part of the body; int1 & sent4 -> int2: if something harms the body, then that something also harms the lungs; int2 & sent10 -> int3: smoking harms the lungs; int3 & sent1 -> int4: inhaling smoke by smoking harms the lungs; sent2 & sent8 -> int5: damage can mean harm; int4 & int5 -> int6: inhaling smoke by smoking causes damage to the lungs; sent12 & sent9 -> int7: a lung is a kind of organ for directly breathing in air; int7 & sent11 -> int8: a lung is a kind of organ for directly breathing in gasses; int8 & sent6 -> int9: lungs can be used for directly breathing in smoke; int9 & sent5 -> int10: lungs can be used for directly inhaling smoke; int10 & int6 -> hypothesis;

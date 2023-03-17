@@ -1,0 +1,202 @@
+Hypothesis: the water in the bucket will evaporate
+Context:
+sent1: sunlight shining means sunlight is provided 
+sent2: if something is in the sunlight then that something will absorb solar energy 
+sent3: to be in the sun means to be in the sunlight 
+sent4: if a substance absorbs solar energy then that substance will increase in temperature 
+sent5: cooling means temperature decreases 
+sent6: evaporation means a substance changes from a liquid into a gas by increasing heat energy 
+sent7: thermal energy is a kind of energy 
+sent8: heat is a kind of energy 
+sent9: heat means the transfer of thermal energy 
+sent10: water absorbs light energy 
+sent11: if heat is absorbed from a source then that heat source will cool 
+sent12: intensity of sunlight is similar to amount of sunlight 
+sent13: heat energy is synonymous with thermal energy 
+sent14: warm up means increase temperature 
+sent15: if heat is added to a substance then that substance absorbs that heat 
+sent16: absorbing energy causes objects / materials / substances to heat 
+sent17: water is a kind of substance 
+sent18: as temperature during the day increases , the temperature in an environment will increase 
+sent19: as the temperature of a liquid increases , the rate of evaporation of that liquid will increase 
+sent20: solar energy can warm up the air 
+sent21: as the sunlight absorbed by the object increases , the temperature of the object will increase more 
+sent22: being in the sun is synonymous with being in the sunlight 
+sent23: if a liquid disappears then that liquid probably evaporated 
+sent24: a bucket of water is in the sunlight 
+sent25: as the amount of water in a body of water increases , the amount of water evaporated from the body of water will increase
+Proof: sent2 & sent24 -> int1: the water in the bucket will absorb solar energy; int1 & sent17 & sent4 -> int2: the water in the bucket will increase in temperature; int2 & sent17 & sent6 -> hypothesis;
+
+Hypothesis: a mutation in sperm or egg of a parent can cause a new trait to appear in the parent 's offspring
+Context:
+sent1: dna are a vehicle for passing genes from parent to offspring 
+sent2: sexual reproduction is a source of genetic variation / naturally occurring variation in offspring / in a species 
+sent3: reproduction increases the number / population of a living thing 
+sent4: genetic information contains instructions for the passage of traits from one generation to the next 
+sent5: if an organism passes on its traits then future generations will have those traits 
+sent6: producing is similar to causing 
+sent7: sexual reproduction increases genetic diversity 
+sent8: some animals have offspring by laying eggs 
+sent9: genes contains genetic information 
+sent10: fertilization is when an egg cell becomes fertilized 
+sent11: one parent is the source of 50% of the genes in a fertilized egg through sexual reproduction 
+sent12: genes is a vehicle for passing genetic information from one generation to the next 
+sent13: each sex cell provides half the number of chromosomes in a fertilized egg through sexual reproduction 
+sent14: to produce means to result in 
+sent15: information in an organism 's chromosomes cause genetic traits to be passed down to that organism 's offspring 
+sent16: a sperm cell is a kind of sex cell 
+sent17: a mutation in the sex cells of a parent can cause a new trait to appear in the parent 's offspring 
+sent18: an egg cell is a kind of sex cell 
+sent19: to reproduce means to have / to produce offspring 
+sent20: reproduction is when an organism passes genetic information from itself to its offspring 
+sent21: trait is a kind of genetic information 
+sent22: genetic / hereditary means of genes / heredity 
+sent23: trait means property 
+sent24: genotype of an organism means the genes of an organism 
+sent25: reproductive behavior is an inherited characteristic
+Proof: sent16 & sent17 & sent18 -> hypothesis;
+
+Hypothesis: a lack of moisture prevents the survival of plants in the desert
+Context:
+sent1: requiring too much of a resource has a negative impact on the availiability of that resource 
+sent2: plants require water for survival 
+sent3: a plant is a kind of living thing 
+sent4: moisture is a form of water 
+sent5: disrupting something from reaching something else decreases the availability of that something 
+sent6: if a living thing is destroyed then the resources used by that living thing will become available 
+sent7: when available resources decrease in an environment , organisms have to conserve those resources 
+sent8: if something has a negative impact on the survival of an organism then that organism may be unable to survive 
+sent9: a plant requires soil for survival / to grow 
+sent10: as available water decreases , the population of plants will decrease 
+sent11: a plant requires sunlight for photosynthesis 
+sent12: as a population of organisms increases , the resources used by those organisms will decrease 
+sent13: if something required for a process is not produced then that process is prevented from occurring / cannot occur 
+sent14: a desert environment is low in availability of water 
+sent15: as a resource required by an organism decreases , the population of that organisms will decrease 
+sent16: a cactus lives in the desert 
+sent17: if the amount of available food and water decreases in an environment then animals may leave that environment to find food and water 
+sent18: a lack of something that a living thing requires prevents the survival of that living thing 
+sent19: if water vapor is limited to reach a location , then that location will be dry 
+sent20: if a resource is not replaced then the resource has low availability 
+sent21: a plant requires a habitat for survival 
+sent22: a tree requires sunlight to grow 
+sent23: a plant requires a specific climate to grow and survive 
+sent24: a plant requires water to grow 
+sent25: a plant requires sunlight to grow
+Proof: sent18 & sent3 -> int1: a lack of something that a plant requires prevents the survival of that plant; int1 & sent2 -> int2: a lack of water prevents the survival of plants; int2 & sent14 -> int3: a lack of water prevents the survival of plants in the desert; int3 & sent4 -> hypothesis;
+
+Hypothesis: cold fronts can cause thudnerstorms of rain as they pass by
+Context:
+sent1: temperature is a property of air mass and includes ordered values of cold / warm 
+sent2: if a jet stream moves south of a location then that location will experience cold weather 
+sent3: when clouds become cold , those clouds will condense 
+sent4: as the amount of water in air condensing into clouds decreases , the amount of precipitation will decrease 
+sent5: a hurricane has large amounts of rain 
+sent6: lack of moisture in the air causes low amounts of rainfall 
+sent7: as air pressure decreases , the chance of rain will increase 
+sent8: rain is a kind of precipitation 
+sent9: cold fronts cause thunderstorms as they pass by 
+sent10: clouds are usually found in the sky 
+sent11: rainfall means precipitation 
+sent12: rainfall means the amount of precipitation 
+sent13: a thunderstorm is a kind of storm 
+sent14: if weather is stormy then there is a greater chance of rain 
+sent15: rainstorm means rain storm 
+sent16: precipitation is when water falls from the sky 
+sent17: a thunderstorm can cause a tornado 
+sent18: types of clouds can be used to predict the possibility of tornadoes developing in a location 
+sent19: if an event is required for a process then that event must occur before that process can occur 
+sent20: water vapor condensing in clouds causes rain 
+sent21: to cause an event means to make that event more likely 
+sent22: a storm is a source of precipitation 
+sent23: a storm is usually a source of strong winds 
+sent24: more likely means increased likelihood 
+sent25: an area receiving rain means rain falling in that area
+Proof: sent22 & sent8 -> int1: a storm is a source of rain; int1 & sent13 -> int2: a thunderstorm is a source of rain; int2 & sent9 -> hypothesis;
+
+Hypothesis: the earth rotating on its tilted axis causes the cycles of day and night on earth
+Context:
+sent1: a phase change is a kind of physical change 
+sent2: motion / movement means moving / to move 
+sent3: afternoon is a part of day time 
+sent4: hours are a kind of unit for measuring time 
+sent5: the afternoon is a part of the day 
+sent6: due to means caused by 
+sent7: the earth rotates on its tilted axis 
+sent8: the sunlight occurs during the day 
+sent9: phase means state 
+sent10: can be means able to be 
+sent11: an example of a physical change is a phase change 
+sent12: earth is a kind of planet 
+sent13: all the time means at day and at night 
+sent14: if something used to be in the past then that something has changed 
+sent15: as the rotation speed of a planet increases , the length of day and night will decrease on that planet 
+sent16: to change means to cause a change 
+sent17: rotating is similar to moving 
+sent18: days ( d ) are a metric unit used for measuring time generally used for values between 1 and 365 
+sent19: rotate means turn 
+sent20: a phase change is when matter / a substance changes from one state of matter into another state of matter 
+sent21: a planet rotating causes cycles of day and night on that planet 
+sent22: approximately means about 
+sent23: rotation is the circular movement of an object around a center / axis 
+sent24: to convert means to change 
+sent25: to rotate means to complete a rotation
+Proof: sent12 & sent7 -> int1: the earth is a planet that rotates on its tilted axis; int1 & sent21 -> hypothesis;
+
+Hypothesis: a compound can only be broken down in chemical change but not physcial changes
+Context:
+sent1: chemical reaction means chemical bonds change 
+sent2: breaking down an object changes that object 's shape / that object 's mass 
+sent3: a compound being broken down is a kind of chemical change 
+sent4: except means not 
+sent5: a compound can be chemically separated into the elements that it is made of 
+sent6: amount is a property of something and includes ordered values of none / least / little / some / half / much / many / most / all 
+sent7: if two substances together form a mixture then those substances can be separated from one another by physical changes 
+sent8: an element cannot be decomposed into two or more different substances by simple chemical methods 
+sent9: chemical reactions do not cause the total number of atoms to change 
+sent10: an example of a physical change is breaking an object 
+sent11: break apart means break down 
+sent12: changed is the opposite of unchanged 
+sent13: separating is similar to breaking 
+sent14: breaking an object into pieces changes the shape of the object 
+sent15: break down is the opposite of put together 
+sent16: chemical bonds are formed by chemically combining elements / atoms / molecules 
+sent17: a chemical property is the opposite of a physical property 
+sent18: when two substances together form a compound then those substances cannot be physically separated 
+sent19: to break down means to break into smaller pieces 
+sent20: matter / energy is always conserved in any physical or chemical process 
+sent21: break down means change from a whole into pieces 
+sent22: a physical property is a kind of property 
+sent23: a chemical property is a kind of property 
+sent24: stay the same means not changing 
+sent25: if something changes , then that something is not the same
+Proof: sent3 & sent5 -> int1: a compound can only be separated into the elements by chemical change; int1 & sent18 -> hypothesis;
+
+Hypothesis: the 150 ml water has a freezing point of 0 c
+Context:
+sent1: liquid has a a lower melting point than solid 
+sent2: melting is when solids are heated above their melting point 
+sent3: melting is a kind of phase change 
+sent4: the freezing point of water is 0 c 
+sent5: state of matter is a property of matter and includes ordered values of solid / liquid / gas 
+sent6: ice is a kind of solid 
+sent7: freezing point is similar to melting point 
+sent8: milliliters ml is a metric unit used for measuring volume generally used for values between 1 and 1000 
+sent9: as heat is transferred from something to something else , the temperature of that something will decrease 
+sent10: freezing causes a solid to form 
+sent11: volume is similar to amount 
+sent12: freezing means cold temperatures 
+sent13: matter in the solid phase has definite volume 
+sent14: freezing point is a property of a substance / material 
+sent15: cooling means temperature decreases 
+sent16: melting point means temperature at which a solid melts / above which a solid melts 
+sent17: ice is colder in temperature than water 
+sent18: melting point is a property of a substance / material 
+sent19: a phase change is when matter / a substance changes from one state of matter into another state of matter 
+sent20: volume has no impact on boiling / melting / freezing point 
+sent21: there is a 100 ml water 
+sent22: cold means low in temperature 
+sent23: if an object is placed in a substance / in a location that is colder then that object will cool to the same temperature of that substance / of that location 
+sent24: mass has no impact on boiling / melting / freezing point 
+sent25: there is a 150 ml water
+Proof: sent21 & sent25 & sent8 -> int1: the 100 ml water and the 150 ml water have different volumes; int1 & sent20 -> int2: different volumes have no impact on the freezing point of the 100ml water and 150 ml water; int2 & sent4 -> hypothesis;

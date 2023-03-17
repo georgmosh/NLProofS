@@ -1,0 +1,202 @@
+Hypothesis: the offspring of two tay-sachs carriers will have 25% probability to have the tay-sachs disease
+Context:
+sent1: if only recessive genes are present , then the recessive trait will be visible / expressed 
+sent2: determine is similar to cause 
+sent3: disease means illness 
+sent4: inherited characteristics are a kind of hereditary information 
+sent5: blood type is an inherited characteristic 
+sent6: amount is a property of something and includes ordered values of none / least / little / some / half / much / many / most / all 
+sent7: the inherited characteristics of the parents can be used to predict inherited characteristics of the offspring 
+sent8: parents produce offspring 
+sent9: inheriting is when an inherited characteristic is copied / is passed from parent to offspring by genetics / dna 
+sent10: if both dominant genes are present , then the dominant trait will be visible / expressed 
+sent11: genes contains genetic information 
+sent12: likelihood is similar to probability 
+sent13: offspring receives half of the genes from each parent 
+sent14: genes are able to determine the inherited characteristics of a living thing 
+sent15: dna are a vehicle for passing genes from parent to offspring 
+sent16: a gene is a kind of unit of hereditary information 
+sent17: genes are located on chromosomes 
+sent18: a heterozygous organism contains one dominant gene and one recessive gene 
+sent19: genes is a vehicle for passing genetic information from one generation to the next 
+sent20: traits can be determined by one pair / many pairs of genes in an organism 
+sent21: genotype of an organism means the genes of an organism 
+sent22: a tay-sachs disease carrier have one dominant and one recessive tay-sachs gene 
+sent23: crossing two heterozygous dominant organisms causes their offspring to be homozygous recessive of 25% probability 
+sent24: 25% probability is similar to one in four 
+sent25: a homozygous recessive organism contains only recessive genes
+Proof: sent18 & sent22 -> int1: a tay-sachs disease carrier is heterozygous; int1 & sent23 -> int2: the offspring of two tay-sachs carriers will have 25% probability to be homozygous recessive in tay-sachs disease; int2 & sent25 -> int3: the offspring of two tay-sachs carriers will have 25% probability to contain only recessive genes for tay-sachs disease; int3 & sent1 -> hypothesis;
+
+Hypothesis: sulfur is a kind of element
+Context:
+sent1: sulfur is yellow in color 
+sent2: chemical composition is a kind of property 
+sent3: to tell the difference between things means to classify those things 
+sent4: charge is a property of an object / a material / a substance and includes ordered values of negatively-charged / neutral / positively-charged 
+sent5: including means containing 
+sent6: a chemical property is a kind of property 
+sent7: cannot means not be able to 
+sent8: an element is identified by its number of protons 
+sent9: chemical compounds contain chemical bonds between atoms / between elements 
+sent10: to be formed by is to be the result of 
+sent11: contains means located in 
+sent12: if something is a part of something else then that something else contains that something 
+sent13: amount is a property of something and includes ordered values of none / least / little / some / half / much / many / most / all 
+sent14: chemical reactivity is a property of elements and includes ordered values of reactive / unreactive 
+sent15: the properties of something can be used to identify / used to describe that something 
+sent16: to classify means to decide what class something belongs to 
+sent17: sulfur cannot be decomposed into different substances by simple chemical methods 
+sent18: decomposing is similar to separating 
+sent19: to decompose means to separate 
+sent20: not is similar to the opposite of 
+sent21: ability is a property of things and includes ordered values of able / unable / can / cannot 
+sent22: both means two 
+sent23: different is the opposite of the same 
+sent24: able is the opposite of unable 
+sent25: an element cannot be decomposed into two or more different substances by simple chemical methods
+Proof: sent17 & sent25 -> hypothesis;
+
+Hypothesis: the protist may be volvox
+Context:
+sent1: fertilization is a stage in the sexual reproduction process 
+sent2: volvox reproduces sexually 
+sent3: sexual reproduction increases genetic diversity 
+sent4: producing is a kind of function 
+sent5: reproduction increases the number / population of a living thing 
+sent6: if something is given off of something , then something is the product of something 
+sent7: a structure of something is synonymous with a part of that something 
+sent8: the composition of something can be used to identify that something 
+sent9: reptiles reproduce through internal fertilization 
+sent10: volvox is a kind of protist 
+sent11: to identify means to discover 
+sent12: new cells with a full set of chromosomes are formed by fertilization 
+sent13: the properties of something can be used to identify / used to describe that something 
+sent14: fertilization is a kind of process 
+sent15: a zygote is formed immediately after fertilization 
+sent16: identifying is similar to determining 
+sent17: a part of a living thing is a natural structure 
+sent18: discovering something usually requires seeing that something 
+sent19: if something is a part of something else then that something else contains that something 
+sent20: a student observes the formation of zygotes by one of the protists 
+sent21: a plant is a member of a plant species 
+sent22: animals require fertilization to reproduce 
+sent23: reproduction is when an organism passes genetic information from itself to its offspring 
+sent24: reproduction ensures the continuation of a plant or animal species 
+sent25: each sex cell provides half the number of chromosomes in a fertilized egg through sexual reproduction
+Proof: sent1 & sent15 -> int1: if a zygote is formed then a sexual reproduction process has happened; int1 & sent20 -> int2: a sexual reproduction process has happened in the protists that the student observed; sent10 & sent2 -> int3: volvox is a kind of protist that reproduces sexually; int2 & int3 -> hypothesis;
+
+Hypothesis: the light energy allows the student to see the specimen through the microscope
+Context:
+sent1: studying something usually requires seeing that something 
+sent2: seeing requires light 
+sent3: light enters the eye through the pupil 
+sent4: a student can see the specimen through a microscope 
+sent5: a retina is part of an eye for sensing light 
+sent6: if an object reflects more light then that object is more easily seen 
+sent7: if something is required for something else then that something allows that something else 
+sent8: visible light is a kind of light 
+sent9: if an object reflects light toward the eye then that object can be seen 
+sent10: visible means able to be seen 
+sent11: light reflecting off of an object causes that object to be visible to the observer 
+sent12: viewing means observing light 
+sent13: light is a kind of electromagnetic radiation 
+sent14: waves can travel through matter 
+sent15: observe means see 
+sent16: visible light can be seen without using equipment 
+sent17: brightness is a property of a light source and includes values of bright / dim 
+sent18: if an object is transparent , then light will shine through that object without scattering 
+sent19: solar energy is a kind of light 
+sent20: when light enters the eye through the pupil , that light falls on the retina 
+sent21: light rays means light 
+sent22: light is a kind of energy 
+sent23: sight means vision 
+sent24: sunlight is a kind of light 
+sent25: sight means to see
+Proof: sent2 & sent22 -> int1: seeing requires light energy; int1 & sent7 -> int2: light energy allows things to be seen; int2 & sent4 -> hypothesis;
+
+Hypothesis: gravity is the force that causes the marble to be pulled down on a planet
+Context:
+sent1: gravity accelerates an object while that object falls by pulling on it 
+sent2: gravity is a kind of force 
+sent3: exerting force on an object means a force acts on an object 
+sent4: sinking is a kind of downward direction 
+sent5: a force is a kind of push or pull on an object 
+sent6: a drop / droplet is a kind of liquid of small amount 
+sent7: the mass of an object causes the gravitational force exerted by that object 
+sent8: a liquid is a kind of fluid 
+sent9: gravity means gravitational pull / gravitational energy / gravitational force / gravitational attraction 
+sent10: to cause means to result in 
+sent11: colliding is a kind of touching 
+sent12: particles in a liquid flows past each other 
+sent13: force requires energy 
+sent14: marble is a kind of object / material 
+sent15: gravity causes objects that have mass / substances to be pulled down / to fall on a planet 
+sent16: down is a kind of direction 
+sent17: a droplet is a kind of little drop 
+sent18: gravity pulls objects towards planets 
+sent19: colliding means coming into a collision 
+sent20: drop means decrease 
+sent21: if something is dropped into a container of something else then that something is touching that something else 
+sent22: when a force is applied to an object , that force is acting on that object 
+sent23: flowing liquid can push objects 
+sent24: empty into a body of water means enters a body of water 
+sent25: to be lowered into a substance means to be placed into that substance
+Proof: sent14 & sent15 & sent2 -> hypothesis;
+
+Hypothesis: pesticides and fertilizers are source of pollution
+Context:
+sent1: harming an environment causes harm to the living things / to the organisms in that environment 
+sent2: humans changing ecosystems / environments usually has a negative impact on an ecosystem / organisms living in an ecosystem 
+sent3: humans eat crops 
+sent4: controlling the amount of pollution is similar to reducing the amount of pollution 
+sent5: polluting means something harmful / something poisonous is added in an environment causes harm in the environment 
+sent6: a cause of something is a reason for that something 
+sent7: waste has a negative impact on the environment 
+sent8: fertilizers are a source of pollution 
+sent9: adverse effect means negative impact 
+sent10: water pollution is when humans pollute the environment with pollutants 
+sent11: limiting a source of something tht has a negative impact on something else has a positive impact on that something else 
+sent12: polluting means something poisonous is added to an environment 
+sent13: if something has a negative impact on something else then increasing the amount of that something has a negative impact on that something else 
+sent14: if crops are sprayed with something then that something will be on the crop 's surface 
+sent15: a pesticide is used for protecting plants by killing insects 
+sent16: as the amount of a source of something decreases , the amount of that something will decrease 
+sent17: overuse is similar to depletion 
+sent18: pollution is a source of pollutants 
+sent19: eating food that contains pesticides can have a negative impact on the health of an animal 
+sent20: human waste often causes harm to an environment 
+sent21: damage has a negative impact on a thing 
+sent22: destroying something causes harm to that something 
+sent23: pesticides can cause pollution 
+sent24: poisoning an environment means poisoning the organisms in that environment 
+sent25: crops are a kind of edible plant for eating
+Proof: sent23 & sent8 -> hypothesis;
+
+Hypothesis: the function of red blood cells is to carry oxygen
+Context:
+sent1: a function is an activity 
+sent2: if an organism can do something , then that organism is able to do that something 
+sent3: transporting is a kind of function 
+sent4: red blood cells carry oxygen 
+sent5: to bring means to transport 
+sent6: take in oxygen means get oxygen into the blood 
+sent7: to be used for something means to be required by that something 
+sent8: to transport can mean to carry 
+sent9: role means function 
+sent10: if something is transported to something else then that something else receives that something 
+sent11: if something requires something else then that something else is important to that something 
+sent12: blood absorbs oxygen in the lungs 
+sent13: oxygenated means having oxygen 
+sent14: oxygen can be found in air 
+sent15: transport means to move / to make travel 
+sent16: controlling is a kind of function 
+sent17: to carry means to move something 
+sent18: the brain is a part of the body 
+sent19: purpose means role 
+sent20: to do a job means to perform a job 
+sent21: to have a function is similar to to be responsible for 
+sent22: to be involved in something means to have a role in something 
+sent23: cells require oxygen for fuel 
+sent24: the function of something is what that something is used to do 
+sent25: a vehicle can be used for transferring
+Proof: sent3 & sent8 -> int1: carrying is a kind of function; int1 & sent4 -> hypothesis;
