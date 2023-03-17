@@ -6,7 +6,7 @@ from tqdm import tqdm
 from time import sleep
 from fairseq.models.transformer_lm import TransformerLanguageModel
 
-from Helpers.common import read_file, write_dict
+from reporting import read_file, read_dict, write_dict
 
 """
 Code inspired/partially adopted from https://github.com/princeton-nlp/NLProofS/blob/main/scripts/prompting.py
@@ -21,7 +21,7 @@ lang_model_checkpoint = "./biogpt_checkpoints/checkpoint.pt"
 lang_model_beam = 5
 
 # Define the necessary hyperparameters (dataset and OpenAI API key)
-api_key_openai = "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"  # TODO: Please do not distribute!!!
+api_key_openai = "helloworld!"  # TODO: Please do not distribute!!!
 dataset = r"C:\Users\georg_mosh.IPL2-PC\PycharmProjects\NLProofS\data\entailment_trees_emnlp2021_data_v3\dataset\task_2\dev.jsonl" \
         if not("biogpt" in lang_model.lower()) else r"H:\BioASQ-binary-candidate-proofs.jsonl"
 
@@ -33,7 +33,6 @@ def main(in_context_learning) -> None:
         prompt_base = read_file(r"./Pipelines", "entailment_proofs_nlps_1-2s.txt")
         openai.api_key = api_key_openai
 
-        from Helpers.common import read_dict
         results = read_dict(results, r"C:\Users\georg_mosh.IPL2-PC\Documents\LLMs_InContextLearning", "temp.txt")
 
         for sample in tqdm(data):

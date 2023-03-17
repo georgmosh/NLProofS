@@ -5,6 +5,13 @@ from prover.datamodule import read_entailmentbank_proofs
 from prover.evaluate import evaluate_entailmentbank
 
 
+def read_file(src_directory, filename, encoding=None, log=True):
+    if log: print("Reading file:", filename)
+    with open(os.path.join(src_directory, filename), mode='r', encoding=encoding) as file:
+        content = file.read()
+    return content
+
+
 def read_dict(directory, filename):
     with open(os.path.join(directory, filename)) as handle:
         data = handle.read()
