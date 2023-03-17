@@ -51,5 +51,3 @@ for experiment in tqdm(experiments_names):
     # Save results
     results[experiment] = [em, f1]
 write_dict(results[experiment], predictions_path, "evaluation.txt")
-
-x=2
