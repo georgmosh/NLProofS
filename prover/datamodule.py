@@ -336,11 +336,14 @@ class StepwiseDataset(Dataset):  # type: ignore
 
     def get_example_eval(self, ex: Example) -> Example:
         proof = ex["proof"]
+        proof_id = ex["proof"].id
         context_text = proof.serialize_context()
         input_seq = f"$hypothesis$ = {proof.hypothesis} ; $context$ = {context_text} ; $proof$ = "
 
         ex = deepcopy(ex)
         ex["input_seq"] = input_seq
+        ex["proof"].id = proof_id
+
         return ex
 
 
