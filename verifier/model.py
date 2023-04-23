@@ -29,20 +29,20 @@ class EntailmentClassifier(pl.LightningModule):
         self.fc = nn.Linear(self.encoder.config.hidden_size, 1)
         self.metrics = {
             "train": {
-                "accuracy": torchmetrics.Accuracy(threshold=0),
-                "average_precision": torchmetrics.AveragePrecision(pos_label=1),
-                "precision": torchmetrics.Precision(),
-                "recall": torchmetrics.Recall(),
-                "specificity": torchmetrics.Specificity(),
-                "f1": torchmetrics.F1Score(),
+                "accuracy": torchmetrics.Accuracy(threshold=0.0, task='binary'),
+                "average_precision": torchmetrics.AveragePrecision(pos_label=1, task='binary'),
+                "precision": torchmetrics.Precision(task='binary'),
+                "recall": torchmetrics.Recall(task='binary'),
+                "specificity": torchmetrics.Specificity(task='binary'),
+                "f1": torchmetrics.F1Score(task='binary'),
             },
             "val": {
-                "accuracy": torchmetrics.Accuracy(threshold=0),
-                "average_precision": torchmetrics.AveragePrecision(pos_label=1),
-                "precision": torchmetrics.Precision(),
-                "recall": torchmetrics.Recall(),
-                "specificity": torchmetrics.Specificity(),
-                "f1": torchmetrics.F1Score(),
+                "accuracy": torchmetrics.Accuracy(threshold=0.0, task='binary'),
+                "average_precision": torchmetrics.AveragePrecision(pos_label=1, task='binary'),
+                "precision": torchmetrics.Precision(task='binary'),
+                "recall": torchmetrics.Recall(task='binary'),
+                "specificity": torchmetrics.Specificity(task='binary'),
+                "f1": torchmetrics.F1Score(task='binary'),
             },
         }
         for split, metrics in self.metrics.items():

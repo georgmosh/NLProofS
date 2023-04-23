@@ -276,6 +276,7 @@ class StepwiseDataset(Dataset):  # type: ignore
 
     def get_example_train(self, ex: Example) -> Example:
         proof = ex["proof"].shuffle_context()
+        proof_id = ex["proof"].id
 
         # Sample the proof step.
         tree = proof.to_tree()
@@ -329,6 +330,8 @@ class StepwiseDataset(Dataset):  # type: ignore
         ex["proof"] = proof
         ex["input_seq"] = input_seq
         ex["output_seq"] = output_seq
+        ex["proof"].id = proof_id
+        e
         return ex
 
     def get_example_eval(self, ex: Example) -> Example:
