@@ -331,7 +331,7 @@ class StepwiseDataset(Dataset):  # type: ignore
         ex["input_seq"] = input_seq
         ex["output_seq"] = output_seq
         ex["proof"].id = proof_id
-        e
+
         return ex
 
     def get_example_eval(self, ex: Example) -> Example:
